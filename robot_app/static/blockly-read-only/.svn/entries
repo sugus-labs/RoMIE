@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1012"
+   name=""
+   committed-date="2013-05-26T14:01:28.748159Z"
+   url="http://blockly.googlecode.com/svn/trunk"
+   last-author="blockly@translatewiki.net"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   prop-time="2013-05-27T15:26:23.000000Z"
+   revision="1012"/>
+<entry
+   name="media"
+   kind="dir"/>
+<entry
+   name="i18n"
+   kind="dir"/>
+<entry
+   committed-rev="851"
+   name="python_compressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-10T00:05:50.791691Z"
+   checksum="900be816afffdf0d03a1139a427486b2"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="972"
+   name="vn_compressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="c46b5ffbe726720c18e1bb07102b67f3"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   name="language"
+   kind="dir"/>
+<entry
+   committed-rev="802"
+   name="build.py"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-02T22:22:03.277626Z"
+   checksum="c0e931abbbdd1b0527c76155424fc4f4"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="972"
+   name="de_compressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="bab5444de1dde9602244a65f8dfa46ea"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   name="core"
+   kind="dir"/>
+<entry
+   committed-rev="972"
+   name="zh_tw_compressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="235d645956d39ed010ab66e560d95277"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="687"
+   name="codereview.settings"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-03-11T22:23:10.139826Z"
+   checksum="9ee42a0db745e6da02aadb09127c21cc"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="blockly_compressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="c5f18f7da95beeaa87e34e4fc8952232"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="851"
+   name="blockly_uncompressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-10T00:05:50.791691Z"
+   checksum="8cacc61b5aea4a1432b305ccc35a6b1a"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="en_compressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="cbe574a46fba92ed9197d4cac9bdc016"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   name="tests"
+   kind="dir"/>
+<entry
+   name="apps"
+   kind="dir"/>
+<entry
+   committed-rev="922"
+   name="javascript_compressed.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-20T15:39:22.604266Z"
+   checksum="487d2c4e597a97afc6750dd8498dabe1"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:21.000000Z"/>
+<entry
+   name="appengine"
+   kind="dir"/>
+<entry
+   name="demos"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name="COPYING"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2012-04-28T17:43:08.509517Z"
+   checksum="f15febb3cae5df43c3fdf761185a95b5"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   name="generators"
+   kind="dir"/>
+</wc-entries>

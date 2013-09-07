@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1012"
+   name=""
+   committed-date="2013-05-26T14:01:28.748159Z"
+   url="http://blockly.googlecode.com/svn/trunk/apps"
+   last-author="blockly@translatewiki.net"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="971"
+   name="es.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="b73cb1c619710146d002c60849b23257"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="971"
+   name="eu.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="c20bc2fc053593261172b078afda70b5"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="971"
+   name="keys.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="f58839b43a08864abd51df3be36ef557"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="971"
+   name="hu.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="5188f6f62b11b6296b8eb060cce64f83"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="971"
+   name="vi.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="d4dd3941069cd3697ee8aed0470953eb"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   name="maze"
+   kind="dir"/>
+<entry
+   committed-rev="729"
+   name="slider.js"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-04-04T04:26:58.882081Z"
+   checksum="a7bf9d83990aefba0356c0ae61beac95"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="ru.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="70cf21580ab95305d5c1d9a86f14e412"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   name="plane"
+   kind="dir"/>
+<entry
+   committed-rev="971"
+   name="sw.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="2e02198bce4809358888c2d81731bfb5"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   name="graph"
+   kind="dir"/>
+<entry
+   committed-rev="922"
+   name="common.js"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-20T15:39:22.604266Z"
+   checksum="c8238e15ee0471c744ee89840ba57a8c"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="el.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="cc7b90d62f82bd178357aa4817db7e79"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="qqq.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="40f412d7131f1cb0924f9413e849e223"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="en.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="2ad61f121ec9e2ca3301cb9ea6d9d155"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="fr.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="b415ebe9ec4bac7a6a01c3353d94a596"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   name="turtle"
+   kind="dir"/>
+<entry
+   committed-rev="971"
+   name="nl.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="27d1fa6cc6f6ce3b6ee92c5a3490347b"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="824"
+   name="messages.js"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-06T18:06:54.544087Z"
+   checksum="7f9cd29c84224fcbd9be21c54bfd250c"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   name="blockfactory"
+   kind="dir"/>
+<entry
+   committed-rev="971"
+   name="pl.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="f9a8a1488b1a910596c47fed3f042edc"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="th.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="632b3a201ef1616511e910bbe559fb88"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="it.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="08df4dd1f8adff4f8b14ca067e51d7ae"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="template.soy"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="8d0b6d7c85c0b961b8dc56c0ecf2c3fb"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="971"
+   name="lv.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="510d9055e37481827a4e61e4fcbcc477"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   name="puzzle"
+   kind="dir"/>
+<entry
+   committed-rev="971"
+   name="ca.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="e985fc457a7c6d6764489ae4747d32bf"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:52.000000Z"/>
+<entry
+   committed-rev="971"
+   name="pt.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="b0e5c8c57cb71f7e7d998381e3edd930"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:52.000000Z"/>
+<entry
+   committed-rev="971"
+   name="sr.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="3fd29c14753f72f9c445ccae5d13ac1a"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:52.000000Z"/>
+<entry
+   committed-rev="971"
+   name="da.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="d524a204cb0019d8e4c60a47b07a6dd0"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:52.000000Z"/>
+<entry
+   committed-rev="971"
+   name="tr.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="a2d10c7c7a0c923bad654f1742dc7b2b"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:52.000000Z"/>
+<entry
+   committed-rev="971"
+   name="de.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="2c3854c3521c80f3ffee97a168119c5e"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:52.000000Z"/>
+<entry
+   name="_soy"
+   kind="dir"/>
+<entry
+   name="code"
+   kind="dir"/>
+<entry
+   committed-rev="813"
+   name="index.html"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-04T03:19:34.728712Z"
+   checksum="42f5b755923cf8ce24be4a115a9db982"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:21.000000Z"/>
+<entry
+   committed-rev="971"
+   name="cs.json"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-24T17:35:31.916641Z"
+   checksum="085e7eb469ea2e76fdf96e82ec86ff94"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:21.000000Z"/>
+</wc-entries>

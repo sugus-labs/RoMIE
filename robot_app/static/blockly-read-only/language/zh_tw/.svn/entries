@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="861"
+   name=""
+   committed-date="2013-05-12T08:51:04.885929Z"
+   url="http://blockly.googlecode.com/svn/trunk/language/zh_tw"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="861"
+   name="_messages.js"
+   text-time="2013-05-27T15:25:47.000000Z"
+   committed-date="2013-05-12T08:51:04.885929Z"
+   checksum="61fabf9cdbb32d88f78e671af4bba197"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+</wc-entries>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="749"
+   name=""
+   committed-date="2013-04-15T21:57:38.419509Z"
+   url="http://blockly.googlecode.com/svn/trunk/tests/generators"
+   last-author="spertus@google.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="601"
+   name="control.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-01-27T08:33:50.790951Z"
+   checksum="efaa35eaa2b5232be8ef73794f80d89d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="601"
+   name="unittest_javascript.js"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-01-27T08:33:50.790951Z"
+   checksum="66baf6594fe0f69e1e87571ed7239f41"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="749"
+   name="colour.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-04-15T21:57:38.419509Z"
+   checksum="60f66ffadd2d0cd2708562c70f001484"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="677"
+   name="text.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-03-04T06:45:21.374072Z"
+   checksum="89b4a160747f3ee9d0eb03d67bf014e2"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="572"
+   name="variables.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-01-06T00:53:33.766998Z"
+   checksum="b5118d36c0356c9876b1411ea947b66f"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="601"
+   name="math.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-01-27T08:33:50.790951Z"
+   checksum="27252a7e44df950609bfb3e2dfbfabcb"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="611"
+   name="unittest.js"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-02-02T11:30:21.376627Z"
+   checksum="7f785d6245342ec1cff7d9c8d14b3b48"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="749"
+   name="index.html"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-04-15T21:57:38.419509Z"
+   checksum="b4255816ed73c6d04b1b323b659b20e4"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="601"
+   name="procedures.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-01-27T08:33:50.790951Z"
+   checksum="88f1255cbd6d976ba7d4ef5f5d1b1966"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="608"
+   name="unittest_python.js"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-01-28T18:30:40.034836Z"
+   checksum="3592a326d34b76f549ff636b02440a22"
+   last-author="scr@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="601"
+   name="logic.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-01-27T08:33:50.790951Z"
+   checksum="77b6cddd0b8a51e483a61b830ea51357"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="676"
+   name="lists.xml"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-03-04T04:36:04.102857Z"
+   checksum="d75ea36719c024465303cc29aefcf5c3"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+</wc-entries>

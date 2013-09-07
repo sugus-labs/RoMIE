@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="937"
+   name=""
+   committed-date="2013-05-21T21:31:26.080075Z"
+   url="http://blockly.googlecode.com/svn/trunk/apps/maze"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="936"
+   name="hu.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="eced6273f10aeed1b9d4e82b67f97622"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="728"
+   name="loading.gif"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-04-03T22:56:37.407355Z"
+   checksum="db119269026111ace13b4e0321c52925"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="853"
+   name="template.js"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-10T21:12:21.524116Z"
+   checksum="23eaad96395cb7bdac54ad104caad066"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="853"
+   name="style.css"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-10T21:12:21.524116Z"
+   checksum="9cf9aad0ccac274084a8757bba7254b5"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="blocks.js"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="d28fb1d0f6cde79f3979aff36c0757b6"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="736"
+   name="win.wav"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-04-05T00:54:19.564831Z"
+   checksum="dbe090c994f303b681ae43de0373fb89"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="ru.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="473a0c7ac860f3597f40ecb23a7f4f2b"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="736"
+   name="whack.wav"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-04-05T00:54:19.564831Z"
+   checksum="37fcf5ced84125a1088b74aa4b889d99"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="sw.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="c4f0ebb078c8174b5efad142cf67569d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="937"
+   name="tiles.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T21:31:26.080075Z"
+   checksum="7e25477a3202f66e39ef3e07a6b353f5"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="el.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="9cb619f3723f553384f0c1e9a9b55846"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="en.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="9e366fd3a82f1a5f23e7dd9a1f6fb39b"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="fr.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="46543e91acec65ef01c709ee9ece496e"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="nl.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="f97773338a2b874dd79181c4afb5a775"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="pl.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="0e012f351fdfd6705d9e0ac0a48bfa72"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="th.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="12b444ff407933f66bf6feb3a87a73c2"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="it.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="07829ea115ab7f5879b2ee0491ee5d7c"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="853"
+   name="template.soy"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-10T21:12:21.524116Z"
+   checksum="bb29068d68e9e28261422baee68a0205"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="lv.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="f554a1c7404deed719190271a0f623db"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="ca.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="335ef1b9b128aad61d43bff2677a5521"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="pt.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="1a0ad7d4b96f1e639c1961fc9c241d6d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="vn.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="eb7f4808f28c48e1e5d3491f2d54e3fd"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="da.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="9b302860af3d7c3b4f4c88bdae30eeaf"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="sr.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="de230e0d30fa60aeb995e3c5164dae15"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="tr.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="c5fd004d56301f59245ead4be1139efb"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="65"
+   name="pegman.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2012-05-16T06:34:24.208689Z"
+   checksum="bf698d8ee5cca0198a18b2e2772a769d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="de.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="dbb248daf8d2b96f5f96a5d7bd56900c"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="585"
+   name="icons.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-01-17T00:41:04.809711Z"
+   checksum="79e720d19442f66884abdab6be7dba1a"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="65"
+   name="marker.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2012-05-16T06:34:24.208689Z"
+   checksum="a4c87df317318a941b7d41a8535c642a"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="853"
+   name="title.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-10T21:12:21.524116Z"
+   checksum="aa4b95c9319314aacec1b7567767dccc"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="937"
+   name="maze.js"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T21:31:26.080075Z"
+   checksum="0da9d324fa20a15e692a803a919161ec"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="936"
+   name="cs.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="53abddb53809990fe20c246f3d49ce72"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="885"
+   name="index.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-15T17:44:46.586255Z"
+   checksum="781b70af8a58427b41623a5260a0da60"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="936"
+   name="es.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="8c2cac8e869f9fe1bc72168239dd00cf"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="936"
+   name="eu.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-21T20:49:19.642375Z"
+   checksum="6754b8702951109921273debfefcad82"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+</wc-entries>

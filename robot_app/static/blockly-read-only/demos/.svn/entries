@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="819"
+   name=""
+   committed-date="2013-05-04T06:08:11.722479Z"
+   url="http://blockly.googlecode.com/svn/trunk/demos"
+   last-author="spertus@google.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   name="fixed"
+   kind="dir"/>
+<entry
+   name="turtle"
+   kind="dir"/>
+<entry
+   name="rtl"
+   kind="dir"/>
+<entry
+   name="iframe"
+   kind="dir"/>
+<entry
+   name="maxBlocks"
+   kind="dir"/>
+<entry
+   name="storage"
+   kind="dir"/>
+<entry
+   name="toolbox"
+   kind="dir"/>
+<entry
+   name="generator"
+   kind="dir"/>
+<entry
+   name="code"
+   kind="dir"/>
+<entry
+   committed-rev="635"
+   name="index.html"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-02-11T15:38:59.211036Z"
+   checksum="fbc57f11732f058de24dc45a581f6130"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   name="maze"
+   kind="dir"/>
+</wc-entries>

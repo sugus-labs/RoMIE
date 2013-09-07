@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="972"
+   name=""
+   committed-date="2013-05-24T17:37:15.421614Z"
+   url="http://blockly.googlecode.com/svn/trunk/apps/blockfactory"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="972"
+   name="factory.js"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="2ec8e65d0cd2d7629d4af1ac53b0bee2"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="632"
+   name="preview.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-02-09T09:49:29.630985Z"
+   checksum="fb3af6fa28b6a6bd1a8ef9b85e91d016"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="923"
+   name="blocks.js"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-05-20T16:10:39.163892Z"
+   checksum="a91332c5d6313ff197e8d24fed013a18"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="739"
+   name="index.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-04-06T00:07:43.496897Z"
+   checksum="a0c6145e4c13bd360c93502839f78860"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="611"
+   name="frame.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-02-02T11:30:21.376627Z"
+   checksum="7fef72cc7e02120b7e930cf0856db47d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+</wc-entries>

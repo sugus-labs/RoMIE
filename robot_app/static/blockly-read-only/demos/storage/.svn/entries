@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="819"
+   name=""
+   committed-date="2013-05-04T06:08:11.722479Z"
+   url="http://blockly.googlecode.com/svn/trunk/demos/storage"
+   last-author="spertus@google.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="819"
+   name="index.html"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-04T06:08:11.722479Z"
+   checksum="3def7e1ecfb09a3dd63bb52ca941faf2"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+</wc-entries>

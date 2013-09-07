@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="972"
+   name=""
+   committed-date="2013-05-24T17:37:15.421614Z"
+   url="http://blockly.googlecode.com/svn/trunk/language"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   name="en"
+   kind="dir"/>
+<entry
+   name="vn"
+   kind="dir"/>
+<entry
+   name="de"
+   kind="dir"/>
+<entry
+   name="common"
+   kind="dir"/>
+<entry
+   name="zh_tw"
+   kind="dir"/>
+</wc-entries>

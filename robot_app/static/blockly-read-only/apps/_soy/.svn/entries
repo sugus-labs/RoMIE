@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="868"
+   name=""
+   committed-date="2013-05-13T20:15:12.248672Z"
+   url="http://blockly.googlecode.com/svn/trunk/apps/_soy"
+   last-author="spertus@google.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="643"
+   name="soyutils.js"
+   text-time="2013-05-27T15:26:20.000000Z"
+   committed-date="2013-02-17T03:44:45.936395Z"
+   checksum="d2bd1545a2f6467bccdd569690520ee8"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:52.000000Z"/>
+<entry
+   committed-rev="868"
+   name="SoyMsgExtractor.jar"
+   text-time="2013-05-27T15:26:20.000000Z"
+   committed-date="2013-05-13T20:15:12.248672Z"
+   checksum="1c4a4eead9590c2cee9f134d2ce4bc50"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:03.000000Z"/>
+<entry
+   committed-rev="643"
+   name="SoyToJsSrcCompiler.jar"
+   text-time="2013-05-27T15:26:20.000000Z"
+   committed-date="2013-02-17T03:44:45.936395Z"
+   checksum="e654e2696c247176bddb0306c76a73a2"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:20.000000Z"/>
+<entry
+   committed-rev="643"
+   name="COPYING"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-02-17T03:44:45.936395Z"
+   checksum="3b83ef96387f14655fc854ddc3c6bd57"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:20.000000Z"/>
+<entry
+   committed-rev="868"
+   name="README"
+   text-time="2013-05-27T15:26:21.000000Z"
+   committed-date="2013-05-13T20:15:12.248672Z"
+   checksum="f685f8e91afa2173d5609269973bac58"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:20.000000Z"/>
+</wc-entries>

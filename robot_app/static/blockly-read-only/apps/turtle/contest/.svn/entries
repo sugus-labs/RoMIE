@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="729"
+   name=""
+   committed-date="2013-04-04T04:26:58.882081Z"
+   url="http://blockly.googlecode.com/svn/trunk/apps/turtle/contest"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="709"
+   name="link.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-03-22T23:05:14.678531Z"
+   checksum="90edd54704ed1eea689d356c41fab2d7"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="709"
+   name="logo.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-03-22T23:05:14.678531Z"
+   checksum="81fdbd80a3a1d2b9513b857df1c3486d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="709"
+   name="d62h9e.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-03-22T23:05:14.678531Z"
+   checksum="e587eb1d35204caadb1e1268546f5e34"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="709"
+   name="cgci4i.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-03-22T23:05:14.678531Z"
+   checksum="25a07d8a374142a701439495e1b39f5d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="709"
+   name="qojqcx.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-03-22T23:05:14.678531Z"
+   checksum="8aab181cce7c1d70bfcfb3001dee247e"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="729"
+   name="index.html"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-04-04T04:26:58.882081Z"
+   checksum="e767821f216b5abb585ed5e14ee7fb61"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+<entry
+   committed-rev="709"
+   name="kvhuxu.png"
+   text-time="2013-05-27T15:25:50.000000Z"
+   committed-date="2013-03-22T23:05:14.678531Z"
+   checksum="5e920ca9b774055f6ab04084e25edab3"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:50.000000Z"/>
+</wc-entries>

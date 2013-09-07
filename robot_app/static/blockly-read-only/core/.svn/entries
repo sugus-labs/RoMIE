@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="972"
+   name=""
+   committed-date="2013-05-24T17:37:15.421614Z"
+   url="http://blockly.googlecode.com/svn/trunk/core"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="812"
+   name="field_colour.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-04T00:51:49.514286Z"
+   checksum="66855387224d9ad5d93903dbc886dabc"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="632"
+   name="variables.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-02-09T09:49:29.630985Z"
+   checksum="c6892a1b8f76d3e8fcf050a4319d2a1a"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="972"
+   name="block_svg.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="340717b47c6b43ed004999a4b569955c"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="698"
+   name="contextmenu.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-03-19T23:57:10.342200Z"
+   checksum="96d635c412b2491234c336cda7be886e"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="972"
+   name="procedures.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="9795b76014b1b4d597d997fc226a7671"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="687"
+   name="field_label.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-03-11T22:23:10.139826Z"
+   checksum="4e170be53e6f791ca1db352dfefeb56f"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="972"
+   name="flyout.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="a5ab9597d7bad7f1bcda5665af21b268"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="580"
+   name="language.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-01-15T06:13:54.794132Z"
+   checksum="e8d5f88afc11c1a6385095ff71af943b"
+   last-author="scr@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="739"
+   name="css.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-04-06T00:07:43.496897Z"
+   checksum="8356c0f71cc60d7a5980178f3eb6e98e"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="632"
+   name="field_variable.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-02-09T09:49:29.630985Z"
+   checksum="13cb66b65186a93071ea76b60044db69"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="687"
+   name="field_checkbox.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-03-11T22:23:10.139826Z"
+   checksum="56e68fd76ca477588c819ab0db2f1b8f"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="block.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="79d9fbcbcf33b0a62346fba6faeb04d9"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="workspace.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="3341a5a1b2b93503589eb202c0568aee"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="918"
+   name="input.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-19T05:51:00.048172Z"
+   checksum="9b3156d3e12f7b1ff551a56ac7915b89"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="connection.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="e9d3d5c03b505e893f473e9cd10af127"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="924"
+   name="blockly.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-20T21:18:03.967011Z"
+   checksum="f9d03c3ec73217efe165de80f8b3e315"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="xml.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="6c0c3b013486f1df470c82dc551a49f3"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="812"
+   name="utils.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-04T00:51:49.514286Z"
+   checksum="432ebae9870dfb5080195e7ec768a65d"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="comment.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="e851eb03db52b88c198e0de31240da09"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="812"
+   name="trashcan.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-04T00:51:49.514286Z"
+   checksum="a4f8b14b394c62e597b9ba8d9407fd39"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="611"
+   name="names.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-02-02T11:30:21.376627Z"
+   checksum="000d5917441919d61834bb8f1ea1bbae"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="warning.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="b8a8aeb63c1942019a640cd6230c9beb"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="874"
+   name="field_textinput.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-15T01:39:35.627665Z"
+   checksum="c3ef02da3ed31754010c850a52fdf056"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="inject.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="b55f98b81d47bbff4052ac745e167b8b"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="812"
+   name="scrollbar.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-04T00:51:49.514286Z"
+   checksum="c52bb5962c00007e72cdd5067e711223"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="field.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="0e226b001b5d2112f472b30d597dfa9c"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="687"
+   name="field_image.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-03-11T22:23:10.139826Z"
+   checksum="1227813edf9dec7c0870fda0c8249480"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="687"
+   name="generator.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-03-11T22:23:10.139826Z"
+   checksum="c0c44269e4d46ac99724df27f06c3f02"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="739"
+   name="toolbox.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-04-06T00:07:43.496897Z"
+   checksum="385e9e9de54b228e29fcef40515e7d4b"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="621"
+   name="tooltip.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-02-06T05:39:53.384486Z"
+   checksum="432e0df746e9166680737787af9db523"
+   last-author="scr@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="972"
+   name="mutator.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-24T17:37:15.421614Z"
+   checksum="519e0af12aa876176f77f0d479ef5c1e"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="621"
+   name="bubble.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-02-06T05:39:53.384486Z"
+   checksum="b6344f232b8192b632607d0980d25faf"
+   last-author="scr@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="812"
+   name="field_dropdown.js"
+   text-time="2013-05-27T15:25:48.000000Z"
+   committed-date="2013-05-04T00:51:49.514286Z"
+   checksum="49675e3b17029dbe5ac39efdcbe03cd2"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+</wc-entries>

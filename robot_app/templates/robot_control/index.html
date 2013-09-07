@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RoMIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="WebLab Deusto">
+
+    {% load staticfiles %}
+    <link rel="icon" href="{% static "ico/favicon.png" %}" type="image/x-icon" />
+
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery-1.9.1.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery-ui.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery.ui.touch-punch.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/bootbox.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/bootstrap.js" %}"></script>
+
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+
+    <style>
+      body {
+        padding-top: 50px; /* 50-60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="static/ico/favicon.png">
+  </head>
+
+  <body>
+
+ 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          
+          <div class="nav-collapse collapse" >
+            <a class="brand" href="" >RoMIE</a>
+            <ul class="nav">
+              <li class="active"><a href="/RoMIE"><i class="icon-road icon-white"></i>&nbsp;Game&nbsp;</a></li>
+              <li class=""><a href="/RoMIE/blockly"><i class="icon-play-circle icon-white"></i>&nbsp;Blockly&nbsp;</a></li>
+            </ul>
+            <div class="btn-group pull-right">
+              <a class="btn btn-primary"  id="quick_help" href="#"><i class="icon-warning-sign icon-white"></i>&nbspQuick Help</a>
+            </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="row-fluid" >
+
+        <div class="span9">
+          <img src="{% static "images/main_640x480_RoMIE.jpg" %}" id="main_image" class="img-polaroid" width=100% height=100%>
+        </div>
+
+
+        <div class="span3" >
+
+          <div class="alert alert-block alert-info" id="selected_value_box">
+          <!--<button type="button" class="close" data-dismiss="alert">&times;</button>-->
+          <div id="selected_value">
+            <h4>
+              <strong>IMPORTANT!</strong>
+              <span class="badge badge-important pull-right" id="selected_number_of_wrong_tries">0</span>
+              <span class="badge badge-success pull-right" id="selected_number_of_correct_tries">0</span>
+            </h4>
+            Try to find the RFIDs to answer the questions.
+          </div>
+        </div>
+
+        <div class="alert alert-info">
+
+          <div class="container-fluid" >
+            <div class="row-fluid">
+
+              <div class="span4 offset4" id="arrow_up">
+                <img class="btn" src="{% static "images/arrow_up.png" %}" width=100% height=100% >
+              </div>
+
+              <div class="span12">
+                <div class="span4" id="arrow_left">
+                  <img class="btn" src="{% static "images/arrow_left.png" %}" width=100% height=100%>
+                </div>
+
+                <div class="span4 offset4" id="arrow_right">
+                  <img class="btn" src="{% static "images/arrow_right.png" %}"  width=100% height=100%>
+                </div>
+              </div>  
+
+              <div class="span4 offset4" id="arrow_down" >
+                <img class="btn" src="{% static "images/arrow_down.png" %}" width=100% height=100%>
+              </div>
+
+            </div>
+          </div>
+        </div>
+     
+        <div>
+          <img src="{% static "images/main_640x480_RoMIE.jpg" %}" id="second_image" class="img-polaroid"  width=100% height=100%>
+        </div> 
+      </div>
+   </div>
+</div>
+
+</body>	
+
+
+<script>
+
+var number_of_correct_tries = 0;
+var number_of_wrong_tries = 0;
+
+$("#arrow_up").click(function() {
+   $.get("/RoMIE/RFID-status/", function(data) {
+      var RFID = data;
+      if (RFID == "4F005687C4") {
+          bootbox.dialog("<div class=\"media\">{% for question in sport_question %}<a class=\"pull-left\" href=\"#\"><img src=\"/RoMIE_static/user_media/{{ question.image }}\" class=\"img-polaroid\"></a><div class=\"media-body\"><h4 class=\"media-heading\">{{ question.title }}</h4><div class=\"media\">{{ question.explanation }}{% for response in question.response_set.all %}<label class=\"radio\"><input type=\"radio\" name=\"options_radios\" id=\"options_radios_{{ response.id }}\" value=\"{{ response.true }}\">{{ response.body }}</input></label>{% endfor %}</div>{% endfor %}</div></div> <p id=\"selected_value\"></p>",
+    [{
+      "label" : "Send to correct",
+      "class" : "btn-success",
+      "callback": function() {
+           var checkedradio = $('[name="options_radios"]:radio:checked').val();
+            if (checkedradio == "True") {
+              $("#selected_value_box").addClass("alert-success")
+              $("#selected_value_box").removeClass("alert-error")
+              $("#selected_value_box").removeClass("alert-info")
+              $('#selected_value').html("<h4><strong>GREAT!</strong><span class=\"badge badge-important pull-right\" id=\"selected_number_of_wrong_tries\"></span><span class=\"badge badge-success pull-right\" id=\"selected_number_of_correct_tries\"></span></h4>You got the right answer.");
+              number_of_correct_tries = number_of_correct_tries + 1;
+              $('#selected_number_of_wrong_tries').html(number_of_wrong_tries);
+              $('#selected_number_of_correct_tries').html(number_of_correct_tries);
+            } else {
+              $("#selected_value_box").addClass("alert-error")
+              $("#selected_value_box").removeClass("alert-success")
+              $("#selected_value_box").removeClass("alert-info")
+              $('#selected_value').html("<h4><strong>SORRY!</strong><span class=\"badge badge-important pull-right\" id=\"selected_number_of_wrong_tries\"></span><span class=\"badge badge-success pull-right\" id=\"selected_number_of_correct_tries\"></span></h4>Wrong answer.Try another time.");
+              number_of_wrong_tries = number_of_wrong_tries + 1;
+              $('#selected_number_of_wrong_tries').html(number_of_wrong_tries);
+              $('#selected_number_of_correct_tries').html(number_of_correct_tries);
+            }
+      }
+    }]
+  );
+      } else if (RFID == "4F00568F86") {
+          bootbox.dialog("<div class=\"media\">{% for question in culture_question %}<a class=\"pull-left\" href=\"#\"><img src=\"/RoMIE_static/user_media/{{ question.image }}\" class=\"img-polaroid\"></a><div class=\"media-body\"><h4 class=\"media-heading\">{{ question.title }}</h4><div class=\"media\">{{ question.explanation }}{% for response in question.response_set.all %}<label class=\"radio\"><input type=\"radio\" name=\"options_radios\" id=\"options_radios_{{ response.id }}\" value=\"{{ response.true }}\">{{ response.body }}</input></label>{% endfor %}</div>{% endfor %}</div></div> <p id=\"selected_value\"></p>",
+    [{
+      "label" : "Send to correct",
+      "class" : "btn-success",
+      "callback": function() {
+            var checkedradio = $('[name="options_radios"]:radio:checked').val();
+            if (checkedradio == "True") {
+              $("#selected_value_box").addClass("alert-success")
+              $("#selected_value_box").removeClass("alert-error")
+              $("#selected_value_box").removeClass("alert-info")
+              $('#selected_value').html("<h4><strong>GREAT!</strong><span class=\"badge badge-important pull-right\" id=\"selected_number_of_wrong_tries\"></span><span class=\"badge badge-success pull-right\" id=\"selected_number_of_correct_tries\"></span></h4>You got the right answer.");
+              number_of_correct_tries = number_of_correct_tries + 1;
+              $('#selected_number_of_wrong_tries').html(number_of_wrong_tries);
+              $('#selected_number_of_correct_tries').html(number_of_correct_tries);
+            } else {
+              $("#selected_value_box").addClass("alert-error")
+              $("#selected_value_box").removeClass("alert-success")
+              $("#selected_value_box").removeClass("alert-info")
+              $('#selected_value').html("<h4><strong>SORRY!</strong><span class=\"badge badge-important pull-right\" id=\"selected_number_of_wrong_tries\"></span><span class=\"badge badge-success pull-right\" id=\"selected_number_of_correct_tries\"></span></h4>Wrong answer.Try another time.");
+              number_of_wrong_tries = number_of_wrong_tries + 1;
+              $('#selected_number_of_wrong_tries').html(number_of_wrong_tries);
+              $('#selected_number_of_correct_tries').html(number_of_correct_tries);
+            }
+      }
+    }]
+  );
+      }});
+   $.post("/RoMIE/", { command: "F" } );
+   $("#arrow_up img").attr("src","{% static "images/arrow_up_pushed.png" %}");
+   $("#arrow_up img").addClass("disabled")
+  
+   setTimeout(function() {
+      $("#arrow_up img").attr("src","{% static "images/arrow_up.png" %}")
+      $("#arrow_up img").removeClass("disabled")
+   } , 4000);
+});
+</script>
+
+<script>
+$("#arrow_down").click(function() {
+   $.post("/RoMIE/", { command: "B" } );
+   $("#arrow_down img").attr("src","{% static "images/arrow_down_pushed.png" %}");
+   $("#arrow_down img").addClass("disabled")
+
+   setTimeout(function() {
+      $("#arrow_down img").attr("src","{% static "images/arrow_down.png" %}")
+      $("#arrow_down img").removeClass("disabled")
+   } , 2000);
+});
+</script>
+
+<script>
+$("#arrow_left").click(function() {
+   $.post("/RoMIE/", { command: "L" } );
+   $("#arrow_left img").attr("src","{% static "images/arrow_left_pushed.png" %}");
+   $("#arrow_left img").addClass("disabled")
+
+   setTimeout(function() {
+      $("#arrow_left img").attr("src","{% static "images/arrow_left.png" %}")
+      $("#arrow_left img").removeClass("disabled")
+   } , 1000);
+});
+</script>
+
+<script>
+$("#arrow_right").click(function() {
+   $.post("/RoMIE/", { command: "R" } );
+   $("#arrow_right img").attr("src","{% static "images/arrow_right_pushed.png" %}");
+   $("#arrow_right img").addClass("disabled")
+
+   setTimeout(function() {
+      $("#arrow_right img").attr("src","{% static "images/arrow_right.png" %}")
+      $("#arrow_right img").removeClass("disabled")
+   } , 1000);
+});
+</script>
+
+<script type="text/javascript">
+
+   var myImageElement = document.getElementById('main_image');
+   setInterval(function() {
+    var myImageElement = document.getElementById('main_image');
+    myImageElement.src = 'http://www.weblab.deusto.es/webcam/proxied.py/romie2?rand=' + Math.random();
+   }, 200);
+
+</script>
+
+<script type="text/javascript">
+
+   var myImageElement = document.getElementById('second_image');
+   setInterval(function() {
+    var myImageElement = document.getElementById('second_image');
+    myImageElement.src = 'http://www.weblab.deusto.es/webcam/proxied.py/romie1?rand=' + Math.random();
+   }, 600);
+
+</script>
+
+<!--<script type="text/javascript">
+
+  function requestJoystickStatus() {
+    $.get("/RoMIE/joystick-status/", function(data) {
+      var pending = JSON.parse(data);
+
+      $.each(pending, function(pos, joystick) {
+        if (joystick == 1) {
+          $("#arrow_up").click()
+        } else if (joystick == 2) {
+          $("#arrow_left").click()
+        } else if (joystick == 3) {
+          $("#arrow_right").click()
+        } else if (joystick == 4) {
+	  $("#arrow_down").click()
+	}
+
+      });
+      requestJoystickStatus();
+    });
+  }
+  
+  requestJoystickStatus();
+
+
+</script>-->
+
+<script type="text/javascript">
+$(document).keydown(function(e){
+    if (e.keyCode == 38) { 
+       $("#arrow_up").click()
+    } else if (e.keyCode == 37) { 
+       $("#arrow_left").click()
+    } else if (e.keyCode == 39) { 
+       $("#arrow_right").click()
+    } else if (e.keyCode == 40) { 
+       $("#arrow_down").click()
+    }
+});
+</script>
+
+<!--<script>
+  
+bootbox.dialog(
+  "<div class=\"media\">{% for question in sport_question %}<a class=\"pull-left\" href=\"#\"><img src=\"/RoMIE_static/user_media/{{ question.image }}\" class=\"img-polaroid\"></a><div class=\"media-body\"><h4 class=\"media-heading\">{{ question.title }}</h4><div class=\"media\">{{ question.explanation }}{% for response in question.response_set.all %}<label class=\"radio\"><input type=\"radio\" name=\"options_radios\" id=\"options_radios_{{ response.id }}\" value=\"{{ response.true }}\">{{ response.body }}</input></label>{% endfor %}</div>{% endfor %}</div></div> <p id=\"selected_value\"></p>", 
+    [{
+      "label" : "Send to correct",
+      "class" : "btn-success",
+      "callback": function() {
+            var checkedradio = $('[name="options_radios"]:radio:checked').val();
+            if (checkedradio == "True") {
+              $("#selected_value_box").addClass("alert-success")
+              $("#selected_value_box").removeClass("alert-error")
+              $('#selected_value').html("<h4><strong>GREAT!</strong></h4> You got the right answer.");
+            } else {
+              $("#selected_value_box").addClass("alert-error")
+              $("#selected_value_box").removeClass("alert-success")
+              $('#selected_value').html("<h4><strong>SORRY!</strong></h4> Wrong answer. Try another time");
+            }
+      }
+    }]
+  );
+//<button class=\"btn btn-primary\" id=\"btn_radios\">Send to correct</button>     <p id=\"selected_value\"></p>
+</script>-->
+
+<script type="text/javascript">
+  $("#quick_help").click(function() {  
+    bootbox.alert("<img src=\"{% static "images/index_screen.png" %}\"/>");
+  });
+</script>

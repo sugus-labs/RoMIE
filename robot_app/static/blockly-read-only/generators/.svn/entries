@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="922"
+   name=""
+   committed-date="2013-05-20T15:39:22.604266Z"
+   url="http://blockly.googlecode.com/svn/trunk/generators"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   name="python"
+   kind="dir"/>
+<entry
+   committed-rev="801"
+   name="javascript.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="5f8180876c76f04bb542741617e0fb92"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   name="javascript"
+   kind="dir"/>
+<entry
+   committed-rev="801"
+   name="python.js"
+   text-time="2013-05-27T15:26:23.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="22c4c774344b0cb388678f9fa9214d14"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:23.000000Z"/>
+</wc-entries>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="801"
+   name=""
+   committed-date="2013-05-02T18:50:20.378200Z"
+   url="http://blockly.googlecode.com/svn/trunk/generators/python"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="801"
+   name="text.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="b1658e0de9cebe356c5d58adf61b8f06"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   committed-rev="801"
+   name="variables.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="657512c9de0f1473deb915a9579eeced"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   committed-rev="801"
+   name="math.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="2138e74eac9fab49d864c7cc7b28168f"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   committed-rev="801"
+   name="procedures.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="c42add52d9c2fa84c608961fe2e22bd4"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   committed-rev="801"
+   name="logic.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="693a35d9ccc988d6615aa3a2841777d1"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   committed-rev="801"
+   name="lists.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="3df67988c3e9db611b3684b025d2c445"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   committed-rev="801"
+   name="control.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="2dc6ccae5dc6f17e0b5ee4d5bc756a23"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+<entry
+   committed-rev="801"
+   name="colour.js"
+   text-time="2013-05-27T15:26:22.000000Z"
+   committed-date="2013-05-02T18:50:20.378200Z"
+   checksum="4910aa8b82d7e2a3a12b49a61b474cb8"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:26:22.000000Z"/>
+</wc-entries>

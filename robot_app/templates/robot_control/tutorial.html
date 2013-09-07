@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RoMIE Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="WebLab Deusto">
+
+    {% load staticfiles %}
+    <link rel="icon" href="{% static "ico/favicon.png" %}" type="image/x-icon" />
+
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery-1.9.1.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery-ui.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery.ui.touch-punch.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/chardinjs.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/bootbox.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/bootstrap.js" %}"></script>
+
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "css/chardinjs.css" %}" rel="stylesheet">
+
+    <style>
+      body {
+        padding-top: 53px; /* 50-60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="static/ico/favicon.png">
+  </head>
+
+  <body>
+
+ 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          
+          <div class="nav-collapse collapse" data-intro="This is the overhead image. In this image you may view the robot and its position." data-position="bottom">
+           <a class="brand" href="" >RoMIE</a>
+           <ul class="nav">
+             <li><a href="\RoMIE"><i class="icon-pencil icon-white"></i>&nbsp;Remote Laboratory&nbsp;</a></li>
+             <li class="active"><a href="\RoMIE\tutorial"><i class="icon-eye-open icon-white"></i>&nbsp;Tutorial&nbsp;</a></li>
+           </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid" >
+
+        <div class="alert alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Yeah!</h4>
+            This is the TUTORIAL page.
+        </div>
+      
+      </div>
+    </div>	
+</body>
+
+<script>
+$(".alert").alert()
+</script>
+
+
+

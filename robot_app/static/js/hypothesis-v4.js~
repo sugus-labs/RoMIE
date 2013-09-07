@@ -1,0 +1,339 @@
+"use strict";
+
+var jsonURL = "http://go-lab.gw.utwente.nl/hypothesis/js/buoyancy.json";
+var inputVariables = [];
+var outputVariables = [];
+var conditions = ['IF', 'THEN', 'AND', 'increases', 'decreases', 'remains'];
+var storage_key = "hypotheses";
+
+$(document).ready(function(){
+    $.ajax({
+        url: jsonURL,
+        dataType: "json",
+        success: readLabData,
+        error: defaultConfiguration,
+        complete: addHypothesisTemplates
+    });
+});
+
+function readLabData(labConfig) {
+    console.log("labConfig from "+jsonURL+", lab_name: "+labConfig.lab_name);
+    pushArray(labConfig.output_variables, outputVariables);
+    pushArray(labConfig.input_variables, inputVariables);
+}
+
+function pushArray(source, target) {
+    $.each(source, function(index, item) {
+        target.push(item.name);
+    });
+}
+
+function defaultConfiguration() {
+    console.log("labConfig: default");
+    //	inputVariables.push('mass', 'force', 'acceleration');//mass of the balls, volumen filling, 
+    //  outputVariables.push('speed', 'energy', 'distance');
+    inputVariables.push('mass', 'volume', 'density', 'material');//mass of the balls, volumen filling
+    outputVariables.push('sinking time', 'floating time', 'sinks');
+}
+
+function addHypothesisRow() {
+    var hypothesisRow = $("<tr >");
+    hypothesisRow.append("<td class='hypothesis_row' colspan='2'><ul class='hypothesis'><li class='hint'>Create your hypothesis here.</li></ul></td>'");
+    hypothesisRow.append("<td class='hypothesis_bin'><img src='/var/www/web_service/static/images/user-trash.png' onclick='deleteHypothesisRow($(this))'/></td>");
+    hypothesisRow.hide();
+    $('#hypothesis_templates_row').before(hypothesisRow);
+    hypothesisRow.fadeIn('medium');
+
+    updateDnD();
+    //resize();
+}
+
+function updateDnD() {
+    $( ".hypothesis").sortable({
+        //accept: ".hypothesis_element",
+        //items: ".hypothesis_element",
+        //axis: "x",
+        cursor: "move"
+        //placeholder: "ui-state-highlight"
+    });
+    $( "#hypothesis_templates").children().draggable({
+        //connectToSortable: ".hypothesis",
+        helper: "clone"
+        //revert: "invalid"
+    });
+    $(".hypothesis_row").droppable({
+        drop: function (ev, ui) {
+            // if something gets dropped here, remove it
+            $(this).find(".hint").remove();
+            if ($(ui.draggable).hasClass("template")) {
+            var newDiv = $(ui.draggable).clone();
+            newDiv.draggable();
+            newDiv.draggable("disable");
+            newDiv.removeClass("template");
+            //newDiv.draggable({
+            //    containment: $(this),
+            //    connectToSortable: $(this).find(".hypothesis"),
+            //    revert: "invalid"
+            //});
+            $(this).find(".hypothesis").append(newDiv);
+            }
+
+        }
+    });
+
+    // make the bin work
+    $(".hypothesis_bin").droppable({
+        drop: function (ev, ui) {
+            // if something gets dropped here, remove it
+            $(ui.draggable).remove();
+        }
+    });
+
+    $("#hypotheses_table").disableSelection();
+}
+
+function deleteHypothesisRow(hypothesis) {
+    hypothesis.parent().parent().hide("medium", function(){
+        hypothesis.parent().parent().remove();
+    });
+    //resize();
+}
+
+function addHypothesisTemplates() {
+    var newDiv
+    for (var i = 0; i < conditions.length; i++) {
+        newDiv = $("<li>"+conditions[i]+"</li>");
+        newDiv.addClass("conditions_element");
+        newDiv.addClass("hypothesis_element");
+        newDiv.addClass("template");
+        $("#hypothesis_templates").append(newDiv);
+
+    }
+    for (var i = 0; i < inputVariables.length; i++) {
+        newDiv = $("<li>"+inputVariables[i]+"</li>");
+        newDiv.addClass("input_variable");
+        newDiv.addClass("hypothesis_element");
+        newDiv.addClass("template");
+        $("#hypothesis_templates").append(newDiv);
+    }
+
+    for (var i = 0; i < outputVariables.length; i++) {
+        newDiv = $("<li>"+outputVariables[i]+"</li>");
+        newDiv.addClass("output_variable");
+        newDiv.addClass("hypothesis_element");
+        newDiv.addClass("template");
+        $("#hypothesis_templates").append(newDiv);
+    }
+
+    // add the first hypothesis row
+    addHypothesisRow();
+}
+
+function hypothesesSave() {
+    if (typeof osapi != "undefined") {
+        // TODO
+        // getting the context; asynch. call
+        /*
+        osapi.context.get().execute(function (context) {
+            var spaceID = "s_"+context.contextId;
+            var jsonHypotheses =  getHypothesesAsJSON();
+            console.log("saving to id: "+spaceID);
+            osapi.appdata.update({ userId: spaceID, data: { "hypotheses": jsonHypotheses } }).execute(function () {
+                console.log("hypotheses updated.");
+            });
+        });
+        Apprise("Your hypotheses have been saved.");
+        */
+    } else {
+        Apprise("We are not running in an opensocial-context; can't save.")
+    }
+}
+
+function hypothesesLoad() {
+    if (typeof osapi != "undefined") {
+        //TODO
+        // getting the context; asynch. call
+        /*
+        osapi.context.get().execute(function (context) {
+            var spaceID = "s_"+context.contextId;
+            console.log("loading from id: "+spaceID);
+            osapi.appdata.get({ userId: spaceID, keys: ["hypotheses"] }).execute(function (data) {
+                console.log(data[spaceID].hypotheses);
+                var hypothesesArray = JSON.parse(data[spaceID].hypotheses);
+                if (hypothesesArray.length > 0) {
+                    // found something -> clear the old hypotheses, load the the new ones
+                    $.each($('.hypothesis_row'), function(index, row) {
+                        $(row).remove();
+                    });
+                    for (var i=0; i<hypothesesArray.length; i++) {
+                        addHypothesis(hypothesesArray[i]);
+                    }
+                }
+            });
+        });
+        */
+    } else {
+        Apprise("We are not running in an opensocial-context; can't load.")
+    }
+}
+
+/*if (ui.helper.attr('id').search(/drag[0-9]/) != -1) {
+ counter++;
+ var element = $(ui.draggable).clone();
+ element.addClass("tempclass");
+ $(this).append(element);
+ $(".tempclass").attr("id", "clonediv" + counter);
+ $("#clonediv" + counter).removeClass("tempclass");
+ //Get the dynamically item id
+ draggedNumber = ui.helper.attr('id').search(/drag([0-9])/)
+ itemDragged = "dragged" + RegExp.$1
+ console.log(itemDragged)
+ $("#clonediv" + counter).addClass(itemDragged);
+ }*/
+
+
+ /*function Hypothesis (inputVariable, preCondition, outputVariable, postCondition, toTest, approved) {
+ this.inputVariable = inputVariable;
+ this.preCondition = preCondition;
+ this.outputVariable = outputVariable;
+ this.postCondition = postCondition;
+ this.toTest = toTest;
+ this.approved = approved;
+
+ this.toString = function() {
+ return "IF " + this.inputVariable + " " + this.preCondition + " THEN " + this.outputVariable + " " + this.postCondition + ".";
+ }
+ }
+
+function addHypothesis(newHypothesis) {
+    console.log('adding new hypothesis template');
+    var newHypothesis = createHypothesis(newHypothesis);
+    newHypothesis.hide();
+    $('#hypothesis_bottom').before(newHypothesis);
+    newHypothesis.fadeIn('medium');
+    resize();
+}
+
+function removeHypothesis(hypothesis) {
+    hypothesis.parent().parent().hide("medium", function(){
+        hypothesis.parent().parent().remove();
+    });
+    resize();
+}
+
+function resize() {
+    if (typeof gadgets == 'object') {
+        gadgets.window.adjustHeight();
+    }
+}
+
+function createHypothesis(newHypothesis) {
+    var newHypothesisTemplate = "";
+    newHypothesisTemplate += "<tr class='hypothesis_row'>";
+    newHypothesisTemplate += "<td class='hypothesis'>";
+    newHypothesisTemplate += "IF " + createSelector(inputVariables, 'inputVariablesSelector') + createSelector(conditions, 'preConditionSelector');
+    newHypothesisTemplate += "THEN "+ createSelector(outputVariables, 'outputVariablesSelector') + createSelector(conditions, 'postConditionSelector') + ".";
+    newHypothesisTemplate += "</td>";
+    newHypothesisTemplate += "<td class='test' align='center'>";
+    newHypothesisTemplate += "<input type='checkbox' name='testCheckbox' checked='checked'>";
+    newHypothesisTemplate += "</td>";
+    newHypothesisTemplate += "<td class='approved' align='center'>";
+    newHypothesisTemplate += "<input type='checkbox' name='approvedCheckbox'>";
+    newHypothesisTemplate += "</td>";
+    newHypothesisTemplate += "<td class='td_delete' align='center'>";
+    newHypothesisTemplate += "<a href='#' onclick='removeHypothesis($(this))' class='hypothesis_delete'>delete</a>";
+    newHypothesisTemplate += "</td>";
+    newHypothesisTemplate += "</tr>";
+
+    var newHypothesisRow = $(newHypothesisTemplate);
+    if (typeof newHypothesis != "undefined") {
+        $(newHypothesisRow).find("[name='inputVariablesSelector']").find("select").val(newHypothesis.inputVariable);
+        $(newHypothesisRow).find("[name='preConditionSelector']").find("select").val(newHypothesis.preCondition);
+        $(newHypothesisRow).find("[name='outputVariablesSelector']").find("select").val(newHypothesis.outputVariable);
+        $(newHypothesisRow).find("[name='postConditionSelector']").find("select").val(newHypothesis.postCondition);
+        $(newHypothesisRow).find("[name='testCheckbox']").attr('checked', newHypothesis.toTest);
+        $(newHypothesisRow).find("[name='approvedCheckbox']").attr('checked', newHypothesis.approved);
+    }
+    return newHypothesisRow;
+}
+
+function getHypothesesAsJSON() {
+    var hypothesesArray = new Array();
+    $.each($('.hypothesis_row'), function(index, row) {
+        var input = $(row).find("[name='inputVariablesSelector']").find(":selected").val();
+        var precondition = $(row).find("[name='preConditionSelector']").find(":selected").val();
+        var output = $(row).find("[name='outputVariablesSelector']").find(":selected").val();
+        var postcondition = $(row).find("[name='postConditionSelector']").find(":selected").val();
+        var test = $(row).find("[name='testCheckbox']").is(':checked');
+        var approved = $(row).find("[name='approvedCheckbox']").is(':checked');
+        hypothesesArray.push(new Hypothesis(input, precondition, output, postcondition, test, approved));
+    });
+    return JSON.stringify(hypothesesArray);
+}
+
+function createSelector(options, name) {
+    var inputForm =  "<form name='"+name+"' class='selector'><select>";
+    options.forEach(function(option) {
+        inputForm += "<option value='"+option+"'>"+option;
+    });
+    inputForm += '</select></form>';
+    return inputForm;
+}
+
+function hypotheses_save() {
+    if (typeof osapi != "undefined") {
+        // getting the context; asynch. call
+        osapi.context.get().execute(function (context) {
+            var spaceID = "s_"+context.contextId;
+            var jsonHypotheses =  getHypothesesAsJSON();
+            console.log("saving to id: "+spaceID);
+            osapi.appdata.update({ userId: spaceID, data: { "hypotheses": jsonHypotheses } }).execute(function () {
+                console.log("hypotheses updated.");
+            });
+        });
+        Apprise("Your hypotheses have been saved.");
+    } else {
+        Apprise("We are not running in an opensocial-context; can't save.")
+    }
+}
+
+function hypotheses_load() {
+    if (typeof osapi != "undefined") {
+        // getting the context; asynch. call
+        osapi.context.get().execute(function (context) {
+            var spaceID = "s_"+context.contextId;
+            console.log("loading from id: "+spaceID);
+            osapi.appdata.get({ userId: spaceID, keys: ["hypotheses"] }).execute(function (data) {
+                console.log(data[spaceID].hypotheses);
+                var hypothesesArray = JSON.parse(data[spaceID].hypotheses);
+                if (hypothesesArray.length > 0) {
+                    // found something -> clear the old hypotheses, load the the new ones
+                    $.each($('.hypothesis_row'), function(index, row) {
+                        $(row).remove();
+                    });
+                    for (var i=0; i<hypothesesArray.length; i++) {
+                        addHypothesis(hypothesesArray[i]);
+                    }
+                }
+            });
+        });
+
+    } else {
+        Apprise("We are not running in an opensocial-context; can't load.")
+    }
+}
+
+function hypotheses_delete() {
+    if (typeof osapi != "undefined") {
+        // getting the context; asynch. call
+        osapi.context.get().execute(function (context) {
+            var spaceID = "s_"+context.contextId;
+            osapi.appdata.delete({ userId: spaceID, keys: ["hypotheses", "storage_key"] }).execute(function () {
+                console.log("deleted.");
+            });
+        });
+    } else {
+        Apprise("We are not running in an opensocial-context; can't delete.")
+    }
+}
+*/

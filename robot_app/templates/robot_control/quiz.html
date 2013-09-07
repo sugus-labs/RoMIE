@@ -1,0 +1,44 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>quiz</title>
+<style>
+
+div.absolute
+{
+	position:absolute;
+	width:250px;
+  	height:65px;
+   	background-color:#E8E7E7;
+	left:380px;
+	top:405px;
+	opacity:0.95;
+	filter:alpha(opacity=95); /* For IE8 and earlier */
+}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0">
+<center>
+<br>
+<script language="javascript">
+<!--
+function writeSwf(movie, width, height) {
+  document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="' + width + '" height="' + height + '" ID="sf" VIEWASTEXT>');
+  document.write('  <param name="movie" value="' + movie + '" />');
+  document.write('  <param name="quality" value="high" />');
+  document.write('  <param name="wmode" value="window" />');
+  document.write('  <param name="allowScriptAccess" value="always" />');
+  document.write('  <param name="allowFullScreen" value="true" />');
+  document.write('  <embed src="' + movie + '" quality="high" name="sf" allowScriptAccess="always" allowFullScreen="true" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="' + width + '" height="' + height + '" />');
+  document.write('</object>');
+}
+  writeSwf("quiz.swf", 720, 540);
+</script>
+
+<div class="absolute">       </div>
+</center>
+</body>
+
+</html>

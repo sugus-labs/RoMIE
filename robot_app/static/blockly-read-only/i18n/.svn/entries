@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="973"
+   name=""
+   committed-date="2013-05-24T17:41:01.084688Z"
+   url="http://blockly.googlecode.com/svn/trunk/i18n"
+   last-author="spertus@google.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="817"
+   name="common.py"
+   text-time="2013-05-27T15:25:47.000000Z"
+   committed-date="2013-05-04T06:03:20.157871Z"
+   checksum="181cfd73c7ea0a8d4301ff41f4fd0e42"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="928"
+   name="json_to_xliff.py"
+   text-time="2013-05-27T15:25:47.000000Z"
+   committed-date="2013-05-21T00:51:13.456954Z"
+   checksum="f3e32b5d3c0a8e3c0fd4799e6f545c8d"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+<entry
+   committed-rev="973"
+   name="xliff_to_json.py"
+   text-time="2013-05-27T15:25:47.000000Z"
+   committed-date="2013-05-24T17:41:01.084688Z"
+   checksum="d2722553f7f945fe59107a29d658b23f"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:47.000000Z"/>
+</wc-entries>

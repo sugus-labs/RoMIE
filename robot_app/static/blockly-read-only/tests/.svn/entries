@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="750"
+   name=""
+   committed-date="2013-04-15T22:42:45.888459Z"
+   url="http://blockly.googlecode.com/svn/trunk/tests"
+   last-author="neil.fraser@gmail.com"
+   kind="dir"
+   uuid="c400ca83-b69d-9dd7-9705-49c6b8615e23"
+   repos="http://blockly.googlecode.com/svn"
+   revision="1012"/>
+<entry
+   committed-rev="523"
+   name="generator_test.js"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2012-12-06T03:37:51.038333Z"
+   checksum="6953ef544002e4f3a33a019d8e122298"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="687"
+   name="blockly_test.html"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-03-11T22:23:10.139826Z"
+   checksum="35f875a58d3e95c502d59700dca5192c"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   committed-rev="749"
+   name="playground.html"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-04-15T21:57:38.419509Z"
+   checksum="152ec34bab342ba5f23b4025a3977bc8"
+   last-author="spertus@google.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:48.000000Z"/>
+<entry
+   name="generators"
+   kind="dir"/>
+<entry
+   committed-rev="750"
+   name="blockly_test.js"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2013-04-15T22:42:45.888459Z"
+   checksum="4afc3c25d848ecb3a308197e3b8c7012"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+<entry
+   committed-rev="523"
+   name="names_test.js"
+   text-time="2013-05-27T15:25:49.000000Z"
+   committed-date="2012-12-06T03:37:51.038333Z"
+   checksum="a5b1f6f068c2b9b7ec3eb77e03429117"
+   last-author="neil.fraser@gmail.com"
+   kind="file"
+   prop-time="2013-05-27T15:25:49.000000Z"/>
+</wc-entries>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RoMIE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="WebLab Deusto">
+
+    {% load staticfiles %}
+    <link rel="icon" href="{% static "ico/favicon.png" %}" type="image/x-icon" />
+
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery-1.9.1.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery-ui.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/jquery.ui.touch-punch.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/chardinjs.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/bootbox.js" %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static "js/bootstrap.js" %}"></script>
+    <script type="text/javascript" src="{% static "blockly-read-only/blockly_compressed.js" %}"></script>
+    <script type="text/javascript" src="{% static "blockly-read-only/python_compressed.js" %}"></script>
+    <script type="text/javascript" src="{% static "blockly-read-only/en_compressed.js" %}"></script>
+    <script type="text/javascript" src="{% static "blockly-read-only/language/common/robot.js" %}"></script>
+    <script type="text/javascript" src="{% static "blockly-read-only/generators/python/robot.js" %}"></script>
+
+
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "css/chardinjs.css" %}" rel="stylesheet">
+
+    <style>
+      body {
+        padding-top: 53px; /* 50-60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="static/ico/favicon.png">
+  </head>
+
+  <body>
+
+ 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          
+          <div class="nav-collapse collapse" >
+           <a class="brand" href="" >RoMIE</a>
+           <ul class="nav">
+             <li class=""><a href="/RoMIE"><i class="icon-pencil icon-white"></i>&nbsp;Remote Laboratory&nbsp;</a></li>
+             <li class="active"><a href="/RoMIE/blockly"><i></i>&nbsp;Blockly&nbsp;</a></li>
+             <!--<li><a href="quiz"><i class="icon-eye-open icon-white"></i>&nbsp;Quiz&nbsp;</a></li>-->
+	     <!--<li class="active"id="arrow_down"><a href=""><i class="icon-eye-open icon-white"></i>&nbsp;Reconnect&nbsp;</a></li>-->
+           </ul>
+           <div class="btn-group pull-right">
+              <a class="btn btn-primary"  id="quick_help" href="#" data-toggle="chardinjs"><i class="icon-warning-sign icon-white"></i>&nbspQuick Help</a>
+             </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+     <div class="row-fluid" >
+
+      <div class="span9" id="blocklyDiv"> </div>
+      <xml id="toolbox" style="display: none">
+        <!--<block type="controls_if"></block>-->
+        <!--<block type="controls_repeat"></block>-->
+        <!--<block type="logic_compare"></block>-->
+        <!--<block type="math_number"></block>-->
+        <!--<block type="robot_wall"></block>-->
+        <block type="robot_turn_left"></block>
+        <block type="robot_turn_right"></block>
+        <block type="robot_forward"></block>
+        <block type="robot_if"></block>
+      </xml>
+
+
+    <div class="span3" >
+     <div>
+      <img src="{% static "images/main_640x480_RoMIE.jpg" %}" id="second_image" class="img-polaroid" data-intro="This is the main image of the maze. In this image you may view the robot and its position." data-position="bottom"  width=100% height=100%>
+      </div>     
+    </div>
+
+    <div class="span3" >    
+    </div>
+    <div class="span3" >    
+    </div>
+
+    <div class="span3" >
+     <div>
+      <img src="{% static "images/main_640x480_RoMIE.jpg" %}" id="second_image" class="img-polaroid" data-intro="This is the main image of the maze. In this image you may view the robot and its position." data-position="bottom"  width=100% height=100%>
+      </div>     
+    </div>
+
+  <div class="span2" >    
+    </div>
+    <div class="span3" >    
+    </div>
+
+    <div class="alert alert-info span3">    
+      <div class="span4">
+      </div>
+      <a class="btn btn-danger"  id="send_program" href="#" data-toggle="chardinjs">Program</a>
+    </div>
+
+
+   </div>
+</div>
+</body>	
+
+<script type="text/javascript">
+
+   var myImageElement = document.getElementById('main_image');
+   setInterval(function() {
+    var myImageElement = document.getElementById('main_image');
+    myImageElement.src = 'http://192.168.0.170/image.jpg?rand=' + Math.random();
+   }, 600);
+
+</script>
+
+<script type="text/javascript">
+
+   setInterval(function() {
+    var myImageElement = document.getElementById('second_image');
+    myImageElement.src = 'http://192.168.0.160/image.jpg?rand=' + Math.random();
+   }, 600);
+
+</script>
+
+<script type="text/javascript">
+  Blockly.inject(document.getElementById('blocklyDiv'),
+    {path: '../../static/blockly-read-only/', toolbox: document.getElementById('toolbox')});
+</script>
+
+<script type="text/javascript">
+  $("#send_program").click(function() {  
+    var code = Blockly.Generator.workspaceToCode('Python');
+    $.post("http://localhost:8000/RoMIE/blockly/", { code: code } );
+  });
+</script>
