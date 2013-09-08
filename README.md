@@ -64,6 +64,8 @@ and put the file supervisord.conf in the path:
 
 and run in a terminal: 
 
+	sudo unlink /tmp/supervisor.sock
+
 	supervisord -c /etc/supervisord.conf
 
 You can access to the interface in the same machine on:
