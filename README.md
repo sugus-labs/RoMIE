@@ -21,12 +21,12 @@ There are many different Technologies implied like Python, Django, JavaScript, J
 
 RoMIE is developed on a Ubuntu 12.04 system, running:
 
-   * Python 2.7 [Python site](http://docs.python.org/2/)
-   * Django 1.5.1 [Django site](https://www.djangoproject.com/‎)
-   * python-mysqldb 1.2.3 [Python_mysql site](http://mysql-python.sourceforge.net/MySQLdb.html)
-   * mysql-server 5.5.32 [mysql site](http://www.mysql.com)
-   * PyBluez [pybluez site](http://code.google.com/p/pybluez/‎)
-   * Supervisord [supervisord site](http://http://supervisord.org/)
+   * Python 2.7  [Python 2.7 site](http://docs.python.org/2/)
+   * Django 1.5.1  [Django site](https://www.djangoproject.com/‎)
+   * python-mysqldb 1.2.3  [python_mysqldb site](http://mysql-python.sourceforge.net/MySQLdb.html)
+   * mysql-server 5.5.32  [MySQL site](http://www.mysql.com)
+   * PyBluez  [PyBluez site](http://code.google.com/p/pybluez/‎)
+   * Supervisord  [Supervisord site](http://http://supervisord.org/)
 
 It might work with other versions.
 
@@ -46,11 +46,11 @@ After that stay in the same directory and type:
 
 You can access to the interface in the same machine on:
 
-	[RoMIE local site](0.0.0.0:8000/RoMIE)
+	0.0.0.0:8000/RoMIE
 
 or in another machine (i.e. a mobile device) connected to the same LAN on:
 
-	[RoMIE local site]([MachineLanIP]:8000/RoMIE)
+	[MachineLanIP]:8000/RoMIE
 
 *******************************************************************************************
 
@@ -68,11 +68,11 @@ and run in a terminal:
 
 You can access to the interface in the same machine on:
 
-	[RoMIE local site](0.0.0.0:80/RoMIE)
+	0.0.0.0:80/RoMIE
 
 or in another machine (i.e. a mobile device) connected to the same LAN on:
 
-	[RoMIE local site]([MachineLanIP]:80/RoMIE)
+	[MachineLanIP]:80/RoMIE
 
 > **NOTE:** It is necessary a Bluetooth dongle in the computer and in the 
 > arduino to work. Therefore, you need to change the Bluetooth MAC in the 
