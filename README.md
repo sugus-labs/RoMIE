@@ -60,12 +60,18 @@ Also you can put your terminal in the root directory of the project and type:
 
 and put the file supervisord.conf in the path: 
 
-	/etc/supervisord.conf 
+	/etc/supervisord.conf
+
+put the file supervisord in /etc/init.d and configure it:
+
+	cp [RoMIE_path]/supervisord /etc/init.d/supervisord
+	sudo chmod +x /etc/init.d/supervisord
+	sudo update-rc.d supervisord defaults
+	sudo service supervisord start
 
 and run in a terminal: 
 
 	sudo unlink /tmp/supervisor.sock
-
 	supervisord -c /etc/supervisord.conf
 
 You can access to the interface in the same machine on:
