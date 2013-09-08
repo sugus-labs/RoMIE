@@ -6,14 +6,14 @@
 
 The actual version is 1.0.1.
 
-AquaGame is a WebLab-Deusto Remote Laboratory for Serious Games deployment based on a Mobile Robot Platform.
+RoMIE is a WebLab-Deusto Remote Laboratory for Serious Games deployment based on a Mobile Robot Platform.
 RoMIE integrate electronics, computers and wireless technologies in a remote laboratory to manage a robot inside a labyrinth from your home. This experiment have a "replica" in the Museum of Sciences and Technology of Sofia, Bulgaria. The above images shows the experiment working.
 
 ![Exhibition1](https://raw.github.com/gmartinvela/RoMIE/master/robot_app/static/images/exhibition1.jpg)
 
 ![Exhibition2](https://raw.github.com/gmartinvela/RoMIE/master/robot_app/static/images/exhibition2.jpg)
 
-There are many different Technologies implied like Python (mainly Django framework) ,Django, JavaScript, JQuery, Arduino, ...
+There are many different Technologies implied like Python, Django, JavaScript, JQuery, HTML, CSS3, Arduino, RFID, Bluetooth, ...
 
 **Hey, check out WebLab-Deusto project! <http://weblab.deusto.es>**
 
@@ -50,6 +50,7 @@ You can access to the interface in the same machine on:
 or in another machine (i.e. a mobile device) connected to the same LAN on:
 
 	[MachineLanIP]:8000/RoMIE
+
 
 > **NOTE:** It is necessary a Bluetooth dongle in the computer and in the 
 > arduino to work. Therefore, you need to change the Bluetooth MAC in the 
