@@ -7,13 +7,13 @@
 The actual version is 1.0.1.
 
 RoMIE is a WebLab-Deusto Remote Laboratory for Serious Games deployment based on a Mobile Robot Platform.
-RoMIE integrate electronics, computers and wireless technologies in a remote laboratory to manage a robot inside a labyrinth from your home. This experiment have a "replica" in the Museum of Sciences and Technology of Sofia, Bulgaria. The above images shows the experiment working.
+RoMIE integrate electronics, computers and wireless technologies in a remote laboratory to manage a robot inside a labyrinth from your home. This experiment has a replica in the Museum of Sciences and Technology of Sofia, Bulgaria. The above images shows the experiment working.
 
 ![Exhibition1](https://raw.github.com/gmartinvela/RoMIE/master/robot_app/static/images/exhibition1.jpg)
 
 ![Exhibition2](https://raw.github.com/gmartinvela/RoMIE/master/robot_app/static/images/exhibition2.jpg)
 
-There are many different Technologies implied like Python, Django, JavaScript, JQuery, HTML, CSS3, Arduino, RFID, Bluetooth, ...
+There are many different Technologies implied like [Python](http://python.org) ,[Django](https://www.djangoproject.com/‎), [JavaScript](http://http://en.wikipedia.org/wiki/JavaScript/‎), [JQuery](http://jquery.com/‎), [HTML](http://en.wikipedia.org/wiki/HTML), [CSS3](http://en.wikipedia.org/wiki/CSS3#CSS_3), [Arduino](www.arduino.cc/), [RFID](http://en.wikipedia.org/wiki/Radio-frequency_identification/‎), [Bluetooth](http://www.bluetooth.com/), ...
 
 **Hey, check out WebLab-Deusto project! <http://weblab.deusto.es>**
 
@@ -21,12 +21,12 @@ There are many different Technologies implied like Python, Django, JavaScript, J
 
 RoMIE is developed on a Ubuntu 12.04 system, running:
 
-   * Python 2.7  [Python 2.7 site](http://docs.python.org/2/)
-   * Django 1.5.1  [Django site](https://www.djangoproject.com/‎)
-   * python-mysqldb 1.2.3  [python_mysqldb site](http://mysql-python.sourceforge.net/MySQLdb.html)
-   * mysql-server 5.5.32  [MySQL site](http://www.mysql.com)
-   * PyBluez  [PyBluez site](http://code.google.com/p/pybluez/‎)
-   * Supervisord  [Supervisord site](http://http://supervisord.org/)
+   * [Python 2.7](http://docs.python.org/2/)
+   * [Django 1.5.1](https://www.djangoproject.com/‎)
+   * [python-mysqldb 1.2.3](http://mysql-python.sourceforge.net/MySQLdb.html)
+   * [mysql-server 5.5.32](http://www.mysql.com)
+   * [PyBluez](http://code.google.com/p/pybluez/‎)
+   * [Supervisord](http://http://supervisord.org/)
 
 It might work with other versions.
 
@@ -36,35 +36,17 @@ It might work with other versions.
 
 ## Setting up the environment and config ##
 
-Like any Django project, put your terminal in the root directory of the project and type:
-
-	$ python manage.py syncdb
-
-After that stay in the same directory and type:
-
-	$ python manage.py runserver 0.0.0.0:8000
-
-You can access to the interface in the same machine on:
-
-	0.0.0.0:8000/RoMIE
-
-or in another machine (i.e. a mobile device) connected to the same LAN on:
-
-	[MachineLanIP]:8000/RoMIE
-
-*******************************************************************************************
-
-Also you can put your terminal in the root directory of the project and type:
+Put your terminal in the root directory of the project and type:
 
 	$ python manage.py syncdb
 
 and put the file supervisord.conf in the path: 
 
-	/etc/supervisord.conf
+	cp [RoMIE_root_path]/supervisord.conf /etc/supervisord.conf
 
 put the file supervisord in /etc/init.d and configure it:
 
-	cp [RoMIE_path]/supervisord /etc/init.d/supervisord
+	cp [RoMIE_root_path]/supervisord /etc/init.d/supervisord
 	sudo chmod +x /etc/init.d/supervisord
 	sudo update-rc.d supervisord defaults
 	sudo service supervisord start
@@ -91,6 +73,7 @@ or in another machine (i.e. a mobile device) connected to the same LAN on:
 ![Index](https://raw.github.com/gmartinvela/RoMIE/master/robot_app/static/images/index_screen.png)
 
 BLOCKLY Interface
+
 ![Blockly](https://raw.github.com/gmartinvela/RoMIE/master/robot_app/static/images/blockly_screen.png)
 
 ## Credits and License ##

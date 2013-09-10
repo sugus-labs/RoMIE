@@ -13,6 +13,7 @@ case $1 in
 start)
         echo -n "Starting supervisord: "
         $SUPERVISORD
+        $SUPERVISOCTL -c /etc/supervisord.conf start all
         echo
         ;;
 stop)
@@ -26,6 +27,7 @@ restart)
         echo
         echo -n "Starting supervisord: "
         $SUPERVISORD
+        $SUPERVISOCTL -c /etc/supervisord.conf start all
         echo
         ;;
 esac
