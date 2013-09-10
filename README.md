@@ -27,6 +27,7 @@ RoMIE is developed on a Ubuntu 12.04 system, running:
    * [mysql-server 5.5.32](http://www.mysql.com)
    * [PyBluez](http://code.google.com/p/pybluez/‎)
    * [Supervisord](http://http://supervisord.org/)
+   * [Apache2](http://httpd.apache.org/)
 
 It might work with other versions.
 
@@ -35,6 +36,19 @@ It might work with other versions.
 > were [Py2Exe](http://www.py2exe.org/) and works very fine.
 
 ## Setting up the environment and config ##
+
+To put in production only needs a little configuration in apache httpd.conf.
+
+	$ sudo nano /etc/apache2/httpd.conf
+
+In this file put this two lines at the start of the file:
+
+	WSGIScriptAlias /RoMIE/app/ /home/[your user]/[RoMIE_root_path]/RoMIE/wsgi.py
+	WSGIPythonPath /home/[your user]/[RoMIE_root_path]/
+
+And add this line to the end of that file:
+
+	Alias /RoMIE/static/ /home/[your user]/[RoMIE_root_path]/RoMIE/static
 
 Put your terminal in the root directory of the project and type:
 
@@ -50,11 +64,6 @@ put the file supervisord in /etc/init.d and configure it:
 	sudo chmod +x /etc/init.d/supervisord
 	sudo update-rc.d supervisord defaults
 	sudo service supervisord start
-
-and run in a terminal: 
-
-	sudo unlink /tmp/supervisor.sock
-	supervisord -c /etc/supervisord.conf
 
 You can access to the interface in the same machine on:
 
