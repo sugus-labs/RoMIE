@@ -32,7 +32,7 @@ It might work with other versions.
 
 > **NOTE:** RoMIE is currently working in Bulgaria in a Windows 7 machine.
 > The library used for the translation from UNIX system to Windows system 
-> were Py2Exe and works very fine.
+> were [Py2Exe](http://www.py2exe.org/) and works very fine.
 
 ## Setting up the environment and config ##
 
